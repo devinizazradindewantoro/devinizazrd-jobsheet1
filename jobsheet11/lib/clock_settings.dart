@@ -18,7 +18,7 @@ class _ClockSettingsScreenState extends State<ClockSettingsScreen> {
     super.initState();
     fetchShifts();
   }
-
+  ///
   Future<void> fetchShifts() async {
     final res = await http.get(Uri.parse(baseUrl));
     if (res.statusCode == 200) {
